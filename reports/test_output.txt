@@ -1,0 +1,27 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.0, pytest-9.0.3, pluggy-1.6.0 -- C:\Users\ACER\Downloads\Day25-Track3-HoTranDinhNguyen-2A202600080\venv\Scripts\python.exe
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: C:\Users\ACER\Downloads\Day25-Track3-HoTranDinhNguyen-2A202600080
+configfile: pyproject.toml
+testpaths: tests
+plugins: hypothesis-6.152.6, cov-7.1.0
+collecting ... collected 15 items
+
+tests/test_circuit_breaker_property.py::test_state_transitions_always_valid PASSED [  6%]
+tests/test_circuit_breaker_property.py::test_circuit_opens_after_threshold PASSED [ 13%]
+tests/test_circuit_breaker_property.py::test_open_circuit_raises_immediately PASSED [ 20%]
+tests/test_config.py::test_default_config_loads PASSED                   [ 26%]
+tests/test_config.py::test_scenarios_loaded PASSED                       [ 33%]
+tests/test_gateway_contract.py::test_gateway_returns_response_with_route_reason PASSED [ 40%]
+tests/test_metrics.py::test_percentile PASSED                            [ 46%]
+tests/test_metrics.py::test_report_dict_contains_required_metrics PASSED [ 53%]
+tests/test_redis_cache.py::test_redis_connection PASSED                  [ 60%]
+tests/test_redis_cache.py::test_set_and_exact_get PASSED                 [ 66%]
+tests/test_redis_cache.py::test_ttl_expiry PASSED                        [ 73%]
+tests/test_redis_cache.py::test_shared_state_across_instances PASSED     [ 80%]
+tests/test_redis_cache.py::test_privacy_query_not_cached PASSED          [ 86%]
+tests/test_redis_cache.py::test_false_hit_different_years PASSED         [ 93%]
+tests/test_todo_requirements.py::test_semantic_cache_should_not_false_hit_different_intent XPASS [100%]
+
+======================== 14 passed, 1 xpassed in 2.33s ========================
