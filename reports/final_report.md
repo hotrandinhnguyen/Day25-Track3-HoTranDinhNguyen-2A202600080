@@ -1,5 +1,8 @@
 # Day 10 Reliability Report
 
+**Họ và tên:** Hồ Trần Đình Nguyên
+**MSSV:** 2A202600080
+
 ## 1. Architecture summary
 
 The gateway enforces reliability through four layers: budget guard, cache, circuit breakers, and static fallback.
